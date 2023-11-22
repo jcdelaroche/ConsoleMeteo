@@ -2,7 +2,7 @@ const getCoord = require("./getCoord");
 const getWeather = require("./getWeather");
 
 const getMeteo = (address) => {
-  getCoord(city)
+  getCoord(address)
     .then((coord) => getWeather(coord))
     .then(({current: weather}) => {
       console.log(`Météo à ${address} :`);
